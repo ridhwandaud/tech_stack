@@ -4,6 +4,9 @@ import CardSection from '/.common';
 
 class ListItem extends Component {
 	 render() {
+
+	 	const { textStyle } = styles;
+
 	 	return(
 	 		<CardSection>
 	 			<Text>
@@ -12,6 +15,13 @@ class ListItem extends Component {
 	 		</CardSection>
 	 	);
 	 }
+}
+
+const styles = {
+	textStyle: {
+		paddingLeft: 18,
+		fontSize: 15
+	}
 }
 
 export default ListItem;	
