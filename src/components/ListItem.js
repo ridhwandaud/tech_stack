@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import CardSection from '/.common';
+import { CardSection } from './common';
 
 class ListItem extends Component {
 	 render() {
@@ -9,7 +9,7 @@ class ListItem extends Component {
 
 	 	return(
 	 		<CardSection>
-	 			<Text>
+	 			<Text style={textStyle}>
 	 				{this.props.library.title}
 	 			</Text>	
 	 		</CardSection>
@@ -22,6 +22,6 @@ const styles = {
 		paddingLeft: 18,
 		fontSize: 15
 	}
-}
+};
 
 export default ListItem;	
