@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import CardSection from '/.common';
 
 class ListItem extends Component {
 	 render() {
 	 	return(
-	 		<View>
+	 		<CardSection>
 	 			<Text>
-	 				ridhwan
+	 				{this.props.library.title}
 	 			</Text>	
-	 		</View>
+	 		</CardSection>
 	 	);
 	 }
 }
 
-export default (ListItem);	
+export default ListItem;	
