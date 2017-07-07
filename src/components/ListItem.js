@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
-import { View, Text ,TouchableWithoutFeedback } from 'react-native';
+ import React, { Component } from 'react';
+import { View, Text ,TouchableWithoutFeedback, LayoutAnimation } from 'react-native';
 import { connect } from 'react-redux';
 import { CardSection } from './common';
 import * as actions from '../actions';
 
 class ListItem extends Component {
+
+	componentWillUpdate(){
+		LayoutAnimation.spring();
+	}
 
 	renderDescription(){
 
